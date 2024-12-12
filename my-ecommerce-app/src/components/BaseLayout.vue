@@ -19,10 +19,7 @@
 
     </div>
   </template>
-  <script lang="ts">
-  export default {
-    name: 'BaseLayout',
-  };
+  <script lang="ts" setup>
   </script>
   
   <style scoped>

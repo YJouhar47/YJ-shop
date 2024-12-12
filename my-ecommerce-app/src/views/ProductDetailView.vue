@@ -23,7 +23,6 @@
           €{{ product.price.toFixed(2) }}
         </p>
 
-        <!-- Knoppen container -->
         <div class="flex gap-4 mt-4">
           <button
             class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 shadow-lg"

@@ -2,7 +2,6 @@
   <div>
     <h2 class="text-3xl font-bold mb-6 text-center">Producten</h2>
 
-    <!-- Productenlijst -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto max-w-7xl px-4">
       <div
         v-for="product in result?.products"
@@ -36,7 +35,6 @@
       </div>
     </div>
 
-    <!-- Fallbacks -->
     <div v-if="loading" class="text-center mt-4 text-blue-500 font-semibold">
       Producten worden geladen...
     </div>
@@ -44,7 +42,6 @@
       Fout bij het laden: {{ error.message }}
     </div>
 
-    <!-- Modaal -->
     <ModalProduct
       :visible="selectedProduct !== null"
       :product="selectedProduct"

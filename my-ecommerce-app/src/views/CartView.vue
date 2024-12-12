@@ -67,17 +67,14 @@ import { Product } from '../types';
 
 const cartStore = useCartStore();
 
-// Verwijder item uit winkelmandje
 function removeFromCart(itemId: number) {
   cartStore.removeFromCart(itemId);
 }
 
-// Verhoog hoeveelheid
 function increaseQuantity(item: Product) {
   cartStore.addToCart(item);
 }
 
-// Verlaag hoeveelheid
 function decreaseQuantity(item: Product) {
   cartStore.decreaseQuantity(item.id);
 }
